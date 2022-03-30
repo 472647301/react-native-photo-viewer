@@ -257,7 +257,7 @@ static const UIEdgeInsets NYTPhotosViewControllerCloseButtonImageInsets = {3, 0,
     self.overlayView.title = overlayTitle;
     
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.backgroundColor = [UIColor blackColor];    // 设置背景颜色
+//    btn.backgroundColor = [UIColor blackColor];    // 设置背景颜色
     btn.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
     btn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
     // 设置标题文字

@@ -251,6 +251,12 @@
 {
     return false;
 }
+
+- (BOOL)photosViewController:(NYTPhotosViewController*)photosViewController captionViewHide:(nonnull id<NYTPhoto>)photo;
+{
+    return _hideFooter;
+}
+
 - (void)displayActivityViewController:(UIActivityViewController*)controller animated:(BOOL)animated
 {
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {

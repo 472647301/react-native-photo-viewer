@@ -117,8 +117,6 @@ static const CGFloat NYTPhotoCaptionViewVerticalMargin = 7.0;
     self.textView.dataDetectorTypes = UIDataDetectorTypeNone;
     self.textView.backgroundColor = [UIColor clearColor];
     self.textView.textContainerInset = UIEdgeInsetsMake(NYTPhotoCaptionViewVerticalMargin, NYTPhotoCaptionViewHorizontalMargin, NYTPhotoCaptionViewVerticalMargin, NYTPhotoCaptionViewHorizontalMargin);
-
-    self.textView.text = @"textContainerInset";
     
     [self addSubview:self.textView];
     
