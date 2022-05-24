@@ -1,13 +1,13 @@
 import { NativeModules, NativeEventEmitter } from "react-native";
 
-const { ByronPhotoViewModule } = NativeModules;
-const emitter = new NativeEventEmitter(ByronPhotoViewModule);
+const { ByronPhotoView } = NativeModules;
+const emitter = new NativeEventEmitter(ByronPhotoView);
 
 class PhotoView {
   static onChange;
 
   static show(params) {
-    ByronPhotoViewModule.show({
+    ByronPhotoView.show({
       list: params.list,
       index: params.index,
     });
