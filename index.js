@@ -9,9 +9,11 @@ class PhotoView {
   static show(params) {
     ByronPhotoView.show({
       list: params.list,
-      index: params.index,
+      index: params.index || 0,
     });
-    this.onChange = params.onChange;
+    if (params.onChange) {
+      this.onChange = params.onChange;
+    }
   }
 }
 
