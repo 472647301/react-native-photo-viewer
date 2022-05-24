@@ -51,5 +51,9 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>应用程序想要将您选择的照片保存到您的照片库中</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>应用程序希望访问您的图片库，以便您选择相关的图片在应用程序内使用</string>
 </dict>
 </plist>

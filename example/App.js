@@ -16,6 +16,7 @@ const BaseUrl = 'https://images.pexels.com/photos';
 
 const photos = [
   `${BaseUrl}/45170/kittens-cat-cat-puppy-rush-45170.jpeg`,
+  'https://kaiguang-assets.ibanquan.com/gxuqtvv6tfd4xik9la0ulrl1k6t8',
   `${BaseUrl}/142615/pexels-photo-142615.jpeg`,
   `${BaseUrl}/248261/pexels-photo-248261.jpeg`,
   `https://media.giphy.com/media/3o6vXWzHtGfMR3XoXu/giphy.gif`,
