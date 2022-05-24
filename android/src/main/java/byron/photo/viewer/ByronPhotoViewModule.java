@@ -29,7 +29,7 @@ public class ByronPhotoViewModule extends ReactContextBaseJavaModule {
     @NonNull
     @Override
     public String getName() {
-        return "ByronPhotoViewModule";
+        return "ByronPhotoView";
     }
 
     @ReactMethod
