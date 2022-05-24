@@ -10,27 +10,24 @@
 
 import React, {Component} from 'react';
 import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
-import PhotoViewModal, {PhotoModal} from '@byron-react-native/photo-viewer';
+import PhotoView from '@byron-react-native/photo-viewer';
 
 const BaseUrl = 'https://images.pexels.com/photos';
 
-const photo = [
-  {uri: `${BaseUrl}/45170/kittens-cat-cat-puppy-rush-45170.jpeg`},
-  {uri: `${BaseUrl}/142615/pexels-photo-142615.jpeg`},
-  {uri: `${BaseUrl}/248261/pexels-photo-248261.jpeg`},
-  {uri: `https://media.giphy.com/media/3o6vXWzHtGfMR3XoXu/giphy.gif`},
+const photos = [
+  `${BaseUrl}/45170/kittens-cat-cat-puppy-rush-45170.jpeg`,
+  `${BaseUrl}/142615/pexels-photo-142615.jpeg`,
+  `${BaseUrl}/248261/pexels-photo-248261.jpeg`,
+  `https://media.giphy.com/media/3o6vXWzHtGfMR3XoXu/giphy.gif`,
 ];
 
 export default class App extends Component {
   onShow = async () => {
-    PhotoModal.show({
-      data: photo.map(e => ({source: e})),
-      hideHeader: photo.length > 1 ? false : true,
+    PhotoView.show({
+      list: photos,
+      index: 1,
       onChange: index => {
-        console.log(' >> onChange :', index);
-      },
-      onDownload: url => {
-        console.log(' >> onDownload :', url);
+        console.log(' >> onChange', index);
       },
     });
   };
@@ -41,7 +38,6 @@ export default class App extends Component {
         <TouchableOpacity style={styles.button} onPress={this.onShow}>
           <Text style={styles.text}>Show Photo Modal</Text>
         </TouchableOpacity>
-        <PhotoViewModal />
       </View>
     );
   }

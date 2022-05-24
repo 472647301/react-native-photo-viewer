@@ -273,7 +273,7 @@ PODS:
   - React-jsinspector (0.67.4)
   - React-logger (0.67.4):
     - glog
-  - react-native-photo-viewer (1.0.0):
+  - react-native-photo-viewer (1.0.3):
     - FLAnimatedImage (~> 1.0.12)
     - React
   - React-perflogger (0.67.4)
@@ -516,7 +516,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: cbdf37cebdc4f5d8b3d0bf5ccaa6147fd9de9f3d
   React-jsinspector: f4775ea9118cbe1f72b834f0f842baa7a99508d8
   React-logger: a1f028f6d8639a3f364ef80419e5e862e1115250
-  react-native-photo-viewer: f96f46a7cc92b1e3d7494f203661b7aba2fc8647
+  react-native-photo-viewer: 2484c78b2f5b6f3c96271ab7591ffb9710f90678
   React-perflogger: 0afaf2f01a47fd0fc368a93bfbb5bd3b26db6e7f
   React-RCTActionSheet: 59f35c4029e0b532fc42114241a06e170b7431a2
   React-RCTAnimation: aae4f4bed122e78bdab72f7118d291d70a932ce2
@@ -534,4 +534,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: b238204fde808b9d15816fe170aa2c48b884b8b0
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3

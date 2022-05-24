@@ -24,8 +24,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.dependency "React"
-  s.dependency "FLAnimatedImage", "~> 1.0.12"
-  # ...
-  # s.dependency "..."
+  s.dependency "GKPhotoBrowser"
+  
 end
 
