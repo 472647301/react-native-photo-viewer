@@ -1,8 +1,8 @@
 #import "ReactNativePhotoViewer.h"
 
-NSInteger const LRDRCTSimpleToastBottomOffset = 40;
-double const LRDRCTSimpleToastShortDuration = 3.0;
-double const LRDRCTSimpleToastLongDuration = 5.0;
+NSInteger const LRDRCTSimpleByronToastBottomOffset = 40;
+double const LRDRCTSimpleByronToastShortDuration = 3.0;
+double const LRDRCTSimpleByronToastLongDuration = 5.0;
 
 @implementation ByronPhotoView {
     NSURL *downloadUrl;
@@ -60,9 +60,9 @@ RCT_EXPORT_METHOD(show:(NSDictionary *)params) {
                   UIViewController* presentedViewController = [self getRootView];
                   UIView * view = [self getToastView:presentedViewController];
                     UIView __weak *blockView = view;
-                    [view makeToast:@"保存失败"
-                           duration:LRDRCTSimpleToastShortDuration
-                           position:CSToastPositionBottom
+                    [view makeByronToast:@"保存失败"
+                           duration:LRDRCTSimpleByronToastShortDuration
+                           position:CSByronToastPositionBottom
                               title:nil
                               image:nil
                               style:nil
@@ -75,9 +75,9 @@ RCT_EXPORT_METHOD(show:(NSDictionary *)params) {
                   UIViewController* presentedViewController = [self getRootView];
                   UIView * view = [self getToastView:presentedViewController];
                     UIView __weak *blockView = view;
-                    [view makeToast:@"保存成功"
-                           duration:LRDRCTSimpleToastShortDuration
-                           position:CSToastPositionBottom
+                    [view makeByronToast:@"保存成功"
+                           duration:LRDRCTSimpleByronToastShortDuration
+                           position:CSByronToastPositionBottom
                               title:nil
                               image:nil
                               style:nil
@@ -120,9 +120,9 @@ RCT_EXPORT_METHOD(show:(NSDictionary *)params) {
 - (UIView *)getToastView: (UIViewController*) ctrl {
     UIView *root = [ctrl view];
     CGRect bound = root.bounds;
-    if (bound.size.height > LRDRCTSimpleToastBottomOffset*2) {
-        bound.origin.y += LRDRCTSimpleToastBottomOffset;
-        bound.size.height -= LRDRCTSimpleToastBottomOffset*2;
+    if (bound.size.height > LRDRCTSimpleByronToastBottomOffset*2) {
+        bound.origin.y += LRDRCTSimpleByronToastBottomOffset;
+        bound.size.height -= LRDRCTSimpleByronToastBottomOffset*2;
     }
     UIView *view = [[UIView alloc] initWithFrame:bound];
     view.userInteractionEnabled = NO;
