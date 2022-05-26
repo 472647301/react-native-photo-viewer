@@ -45,7 +45,7 @@ public class ByronPhotoViewModule extends ReactContextBaseJavaModule {
         ImagePreview.getInstance().setContext(Objects.requireNonNull(getCurrentActivity()))
                 .setIndex(params.getInt("index"))
                 .setImageList(imageList)
-                .setShowDownButton(isHideDownload != 0)
+                .setShowDownButton(isHideDownload == 0)
                 .setBigImagePageChangeListener(new OnBigImagePageChangeListener() {
                     @Override
                     public void onPageScrolled(int i, float v, int i1) {
