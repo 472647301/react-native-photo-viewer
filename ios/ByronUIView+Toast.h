@@ -1,5 +1,5 @@
 //
-//  UIView+Toast.h
+//  ByronUIView+Toast.h
 //  Toast
 //
 //  Copyright (c) 2011-2017 Charles Scalesse.

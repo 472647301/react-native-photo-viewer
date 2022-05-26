@@ -3,7 +3,7 @@
 #import <React/RCTBridgeModule.h>
 #import <React/RCTEventEmitter.h>
 #import "GKPhotoBrowser.h"
-#import "UIView+Toast.h"
+#import "ByronUIView+Toast.h"
 
 @interface ByronPhotoView : RCTEventEmitter <RCTBridgeModule, GKPhotoBrowserDelegate>
 

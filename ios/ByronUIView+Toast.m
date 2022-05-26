@@ -1,5 +1,5 @@
 //
-//  UIView+Toast.m
+//  ByronUIView+Toast.m
 //  Toast
 //
 //  Copyright (c) 2011-2017 Charles Scalesse.
@@ -23,7 +23,7 @@
 //  TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 //  SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#import "UIView+Toast.h"
+#import "ByronUIView+Toast.h"
 #import <QuartzCore/QuartzCore.h>
 #import <objc/runtime.h>
 
