@@ -3,6 +3,7 @@ declare module "@byron-react-native/photo-viewer" {
     static show(params: {
       list: string[];
       index?: number;
+      isHideDownload?: boolean;
       onChange?: (index: number) => void;
     }): void;
   }
