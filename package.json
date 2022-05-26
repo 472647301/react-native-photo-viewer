@@ -1,7 +1,7 @@
 {
   "name": "@byron-react-native/photo-viewer",
   "title": "React Native Photo Viewer",
-  "version": "2.0.4",
+  "version": "2.0.6",
   "description": "TODO",
   "main": "index.js",
   "files": [
