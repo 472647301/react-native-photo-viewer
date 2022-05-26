@@ -17,7 +17,7 @@ RCT_EXPORT_MODULE()
 RCT_EXPORT_METHOD(show:(NSDictionary *)params) {
     NSMutableArray *photos = [NSMutableArray new];
     NSNumber *index = params[@"index"];
-    BOOL isHideDownload = params[@"isHideDownload"];
+    NSNumber *isHideDownload = params[@"isHideDownload"];
     int currentIndex = [index intValue];
     NSArray *imageList = params[@"list"];
     for (int i = 0; i < imageList.count; i++) {
@@ -41,7 +41,7 @@ RCT_EXPORT_METHOD(show:(NSDictionary *)params) {
     btn.frame = CGRectMake(100, 10, 24, 24);
     [btn setImage:icon forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(onDownload:) forControlEvents:UIControlEventTouchUpInside];
-    if (isHideDownload == NO) {
+    if ([isHideDownload intValue] == 0) {
         [browser setSaveBtn:btn];
     }
     browser.showStyle = GKPhotoBrowserShowStyleNone;
