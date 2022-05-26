@@ -36,7 +36,7 @@ public class ByronPhotoViewModule extends ReactContextBaseJavaModule {
     public void show(ReadableMap params) {
         ReadableArray rnList = params.getArray("list");
         List<String> imageList = new ArrayList<>();
-        boolean isHideDownload = params.getBoolean("isHideDownload");
+        int isHideDownload = params.getInt("isHideDownload");
         mEmitter = mContext.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class);
         for (int i = 0; i < Objects.requireNonNull(rnList).size(); i++) {
             imageList.add(rnList.getString(i));
@@ -45,7 +45,7 @@ public class ByronPhotoViewModule extends ReactContextBaseJavaModule {
         ImagePreview.getInstance().setContext(Objects.requireNonNull(getCurrentActivity()))
                 .setIndex(params.getInt("index"))
                 .setImageList(imageList)
-                .setShowDownButton(isHideDownload)
+                .setShowDownButton(isHideDownload != 0)
                 .setBigImagePageChangeListener(new OnBigImagePageChangeListener() {
                     @Override
                     public void onPageScrolled(int i, float v, int i1) {
