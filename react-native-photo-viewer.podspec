@@ -25,7 +25,6 @@ Pod::Spec.new do |s|
 
   s.dependency "React"
   s.dependency "GKPhotoBrowser"
-  s.dependency "Toast"
   
 end
 
