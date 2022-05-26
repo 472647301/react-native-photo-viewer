@@ -10,6 +10,7 @@ class PhotoView {
     ByronPhotoView.show({
       list: params.list,
       index: params.index || 0,
+      isHideDownload: params.isHideDownload || false,
     });
     if (params.onChange) {
       this.onChange = params.onChange;
