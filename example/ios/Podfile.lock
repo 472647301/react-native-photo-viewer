@@ -278,10 +278,9 @@ PODS:
   - React-jsinspector (0.67.4)
   - React-logger (0.67.4):
     - glog
-  - react-native-photo-viewer (1.0.3):
+  - react-native-photo-viewer (2.0.2):
     - GKPhotoBrowser
     - React
-    - Toast
   - React-perflogger (0.67.4)
   - React-RCTActionSheet (0.67.4):
     - React-Core/RCTActionSheetHeaders (= 0.67.4)
@@ -350,7 +349,6 @@ PODS:
   - SDWebImage (5.12.5):
     - SDWebImage/Core (= 5.12.5)
   - SDWebImage/Core (5.12.5)
-  - Toast (4.0.0)
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
@@ -429,7 +427,6 @@ SPEC REPOS:
     - libevent
     - OpenSSL-Universal
     - SDWebImage
-    - Toast
     - YogaKit
 
 EXTERNAL SOURCES:
@@ -528,7 +525,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: cbdf37cebdc4f5d8b3d0bf5ccaa6147fd9de9f3d
   React-jsinspector: f4775ea9118cbe1f72b834f0f842baa7a99508d8
   React-logger: a1f028f6d8639a3f364ef80419e5e862e1115250
-  react-native-photo-viewer: e584d455d8bbcbee73526069737e49d53ffd50f3
+  react-native-photo-viewer: f73d76c6c509273b8048529073cba237c3a5e7ec
   React-perflogger: 0afaf2f01a47fd0fc368a93bfbb5bd3b26db6e7f
   React-RCTActionSheet: 59f35c4029e0b532fc42114241a06e170b7431a2
   React-RCTAnimation: aae4f4bed122e78bdab72f7118d291d70a932ce2
@@ -542,7 +539,6 @@ SPEC CHECKSUMS:
   React-runtimeexecutor: a9d3c82ddf7ffdad9fbe6a81c6d6f8c06385464d
   ReactCommon: 07d0c460b9ba9af3eaf1b8f5abe7daaad28c9c4e
   SDWebImage: 0905f1b7760fc8ac4198cae0036600d67478751e
-  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   Yoga: d6b6a80659aa3e91aaba01d0012e7edcbedcbecd
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
