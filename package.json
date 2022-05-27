@@ -18,8 +18,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github_account/react-native-photo-viewer.git",
-    "baseUrl": "https://github.com/github_account/react-native-photo-viewer"
+    "url": "git+https://github.com/472647301/react-native-photo-viewer.git",
+    "baseUrl": "https://github.com/472647301/react-native-photo-viewer"
   },
   "keywords": [
     "react-native"
