@@ -1,7 +1,9 @@
-import { NativeModules, NativeEventEmitter } from "react-native";
+import { NativeModules, NativeEventEmitter, Platform } from "react-native";
 
 const { ByronPhotoView } = NativeModules;
-const emitter = new NativeEventEmitter(ByronPhotoView);
+const emitter = new NativeEventEmitter(
+  Platform.OS === "ios" ? ByronPhotoView : null
+);
 
 class PhotoView {
   static onChange;
