@@ -21,5 +21,5 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
     implementation 'com.github.bumptech.glide:okhttp3-integration:4.12.0'
     // BigImageViewPager https://github.com/SherlockGougou/BigImageViewPager
-    implementation 'com.github.SherlockGougou:BigImageViewPager:androidx-7.0.0'
+    implementation 'com.github.SherlockGougou:BigImageViewPager:androidx-7.2.0'
 }
