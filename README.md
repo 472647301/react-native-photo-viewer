@@ -1,68 +1,33 @@
-# react-native-photo-viewer
+# rn-photo-viewer
 
-## Getting started
+rn-photo-viewer
 
-`$ npm install @byron-react-native/photo-viewer --save`
+## Installation
 
-### Or
-
-`$ yarn add @byron-react-native/photo-viewer`
+```sh
+npm install rn-photo-viewer
+```
 
 ## Usage
-```javascript
-import React, {Component} from 'react';
-import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
-import PhotoView from '@byron-react-native/photo-viewer';
 
-const BaseUrl = 'https://images.pexels.com/photos';
 
-const photos = [
-  `${BaseUrl}/45170/kittens-cat-cat-puppy-rush-45170.jpeg`,
-  'https://kaiguang-assets.ibanquan.com/gxuqtvv6tfd4xik9la0ulrl1k6t8',
-  `${BaseUrl}/142615/pexels-photo-142615.jpeg`,
-  `${BaseUrl}/248261/pexels-photo-248261.jpeg`,
-  `https://media.giphy.com/media/3o6vXWzHtGfMR3XoXu/giphy.gif`,
-];
+```js
+import { multiply } from 'rn-photo-viewer';
 
-export default class App extends Component {
-  onShow = async () => {
-    PhotoView.show({
-      list: photos,
-      index: 1,
-      onChange: index => {
-        console.log(' >> onChange', index);
-      },
-    });
-  };
+// ...
 
-  render() {
-    return (
-      <View style={styles.page}>
-        <TouchableOpacity style={styles.button} onPress={this.onShow}>
-          <Text style={styles.text}>Show Photo Modal</Text>
-        </TouchableOpacity>
-      </View>
-    );
-  }
-}
-
-const styles = StyleSheet.create({
-  page: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  button: {
-    width: 200,
-    height: 48,
-    borderRadius: 24,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#2da44e',
-  },
-  text: {
-    fontSize: 18,
-    color: '#fff',
-  },
-});
+const result = multiply(3, 7);
 ```
+
+
+## Contributing
+
+See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
+
+## License
+
+MIT
+
+---
+
+Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
