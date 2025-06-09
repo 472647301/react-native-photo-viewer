@@ -27,16 +27,23 @@ RCT_EXPORT_MODULE()
   GKPhotoBrowser *browser = [GKPhotoBrowser photoBrowserWithPhotos:photos currentIndex:index];
   
   GKPhotoBrowserConfigure *configure = GKPhotoBrowserConfigure.defaultConfig;
-  configure.failureText = options.failureText();
-  configure.videoFailureText = options.videoFailureText();
+  
   configure.hidesSavedBtn = options.isHidesSavedBtn();
   configure.isVideoReplay = options.isVideoReplay();
   configure.isStatusBarShow = options.isStatusBarShow();
   configure.isHideSourceView = options.isHideSourceView();
   configure.isUpSlideDismissDisabled = options.isUpSlideDismissDisabled();
+  
   configure.loadStyle = GKPhotoBrowserLoadStyleDeterminateSector;
+  configure.originLoadStyle = GKPhotoBrowserLoadStyleDeterminateSector;
+  configure.failStyle = GKPhotoBrowserFailStyleOnlyImage;
+  
   configure.videoLoadStyle = GKPhotoBrowserLoadStyleDeterminateSector;
+  configure.videoFailStyle = GKPhotoBrowserFailStyleOnlyImage;
+  configure.isVideoPausedWhenScrollBegan = YES;
+  
   configure.liveLoadStyle = GKPhotoBrowserLoadStyleDeterminateSector;
+  
   browser.configure = configure;
   
   UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;

@@ -1,8 +1,6 @@
 import RnPhotoViewer from './NativeRnPhotoViewer';
 
 export interface RnPhotoViewerOptions {
-  failureText: string;
-  videoFailureText: string;
   isVideoReplay: boolean;
   isStatusBarShow: boolean;
   isHidesSavedBtn: boolean;
@@ -11,14 +9,17 @@ export interface RnPhotoViewerOptions {
   isUpSlideDismissDisabled: boolean;
 }
 
+export interface RnPhotoViewerItem {
+  url: string;
+  isVideo: boolean;
+}
+
 export function showPhoto(
   index: number,
-  images: Array<{ url: string; isVideo: boolean }>,
+  images: RnPhotoViewerItem[],
   options?: Partial<RnPhotoViewerOptions>
 ): void {
   return RnPhotoViewer.showPhoto(index, images, {
-    failureText: 'loading failed',
-    videoFailureText: 'loading failed',
     isVideoReplay: false,
     isStatusBarShow: false,
     isHidesSavedBtn: false,

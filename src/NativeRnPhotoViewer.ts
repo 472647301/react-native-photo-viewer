@@ -2,8 +2,6 @@ import type { TurboModule } from 'react-native';
 import { TurboModuleRegistry } from 'react-native';
 
 export interface RnPhotoViewerOptions {
-  failureText: string;
-  videoFailureText: string;
   isVideoReplay: boolean;
   isStatusBarShow: boolean;
   isHidesSavedBtn: boolean;
@@ -11,10 +9,14 @@ export interface RnPhotoViewerOptions {
   /** 是否禁止上滑消失，默认NO */
   isUpSlideDismissDisabled: boolean;
 }
+export interface RnPhotoViewerItem {
+  url: string;
+  isVideo: boolean;
+}
 export interface Spec extends TurboModule {
   showPhoto(
     index: number,
-    images: Array<{ url: string; isVideo: boolean }>,
+    images: RnPhotoViewerItem[],
     options: RnPhotoViewerOptions
   ): void;
 }
