@@ -41,6 +41,7 @@ RCT_EXPORT_MODULE()
   configure.videoLoadStyle = GKPhotoBrowserLoadStyleDeterminateSector;
   configure.videoFailStyle = GKPhotoBrowserFailStyleOnlyImage;
   configure.isVideoPausedWhenScrollBegan = YES;
+  configure.isAdaptiveSafeArea = YES;
   
   configure.liveLoadStyle = GKPhotoBrowserLoadStyleDeterminateSector;
   

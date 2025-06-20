@@ -2,7 +2,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "rn-photo-viewer": ["./src/index"]
+      "rn-photo-viewer2": ["./src/index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,

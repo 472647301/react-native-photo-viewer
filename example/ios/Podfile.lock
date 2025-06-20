@@ -20,31 +20,6 @@ PODS:
   - FBLazyVector (0.79.2)
   - fmt (11.0.2)
   - GKLivePhotoManager (1.0.5)
-  - GKPhotoBrowser (3.2.2):
-    - GKPhotoBrowser/Default (= 3.2.2)
-  - GKPhotoBrowser/AF (3.2.2):
-    - AFNetworking
-    - GKLivePhotoManager
-    - GKPhotoBrowser/Core
-  - GKPhotoBrowser/AVPlayer (3.2.2):
-    - GKPhotoBrowser/Core
-  - GKPhotoBrowser/Core (3.2.2):
-    - GKPhotoBrowser/Resources
-  - GKPhotoBrowser/Cover (3.2.2):
-    - GKPhotoBrowser/Core
-  - GKPhotoBrowser/Default (3.2.2):
-    - GKPhotoBrowser/AF
-    - GKPhotoBrowser/AVPlayer
-    - GKPhotoBrowser/Cover
-    - GKPhotoBrowser/Progress
-    - GKPhotoBrowser/SD
-  - GKPhotoBrowser/Progress (3.2.2):
-    - GKPhotoBrowser/Core
-    - GKSliderView
-  - GKPhotoBrowser/Resources (3.2.2)
-  - GKPhotoBrowser/SD (3.2.2):
-    - GKPhotoBrowser/Core
-    - SDWebImage (~> 5.0)
   - GKSliderView (1.2.3)
   - glog (0.3.5)
   - hermes-engine (0.79.2):
@@ -1697,8 +1672,10 @@ PODS:
     - React-perflogger (= 0.79.2)
     - React-utils (= 0.79.2)
   - RnPhotoViewer (0.1.0):
+    - AFNetworking
     - DoubleConversion
-    - GKPhotoBrowser
+    - GKLivePhotoManager
+    - GKSliderView
     - glog
     - hermes-engine
     - RCT-Folly (= 2024.11.18.00)
@@ -1720,11 +1697,14 @@ PODS:
     - ReactCodegen
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
+    - SDWebImage
+    - Toast
     - Yoga
   - SDWebImage (5.21.0):
     - SDWebImage/Core (= 5.21.0)
   - SDWebImage/Core (5.21.0)
   - SocketRocket (0.7.1)
+  - Toast (4.1.1)
   - Yoga (0.0.0)
 
 DEPENDENCIES:
@@ -1806,10 +1786,10 @@ SPEC REPOS:
   trunk:
     - AFNetworking
     - GKLivePhotoManager
-    - GKPhotoBrowser
     - GKSliderView
     - SDWebImage
     - SocketRocket
+    - Toast
 
 EXTERNAL SOURCES:
   boost:
@@ -1964,7 +1944,6 @@ SPEC CHECKSUMS:
   FBLazyVector: 84b955f7b4da8b895faf5946f73748267347c975
   fmt: a40bb5bd0294ea969aaaba240a927bd33d878cdd
   GKLivePhotoManager: 7d5bc069382d5a4c1d44a846727b0beb08582256
-  GKPhotoBrowser: 1dc2db1effb3f3b46f993b5f9a94225fa11dd3a4
   GKSliderView: 7c6f853afeb0ae370bb8dce76ec669d6e9109d1d
   glog: 5683914934d5b6e4240e497e0f4a3b42d1854183
   hermes-engine: 314be5250afa5692b57b4dd1705959e1973a8ebe
@@ -2030,9 +2009,10 @@ SPEC CHECKSUMS:
   ReactAppDependencyProvider: d5dcc564f129632276bd3184e60f053fcd574d6b
   ReactCodegen: fda99a79c866370190e162083a35602fdc314e5d
   ReactCommon: 4d0da92a5eb8da86c08e3ec34bd23ab439fb2461
-  RnPhotoViewer: cda8a9975ab13a79c084996f4c339be5120b5edd
+  RnPhotoViewer: bda7f49b9101b9aa384cc8325bc808b348bc9320
   SDWebImage: f84b0feeb08d2d11e6a9b843cb06d75ebf5b8868
   SocketRocket: d4aabe649be1e368d1318fdf28a022d714d65748
+  Toast: 1f5ea13423a1e6674c4abdac5be53587ae481c4e
   Yoga: c758bfb934100bb4bf9cbaccb52557cee35e8bdf
 
 PODFILE CHECKSUM: dc5627517b98a96f7b7f90d571ba2e2ff707e3f7

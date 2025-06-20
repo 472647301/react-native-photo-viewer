@@ -1,5 +1,5 @@
 import { View, StyleSheet, Button } from 'react-native';
-import { showPhoto } from 'rn-photo-viewer';
+import { showPhoto } from 'rn-photo-viewer2';
 
 const photos = [
   'https://images.pexels.com/photos/45170/kittens-cat-cat-puppy-rush-45170.jpeg',
