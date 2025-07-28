@@ -34,8 +34,8 @@ RCT_EXPORT_MODULE()
   configure.isHideSourceView = options.isHideSourceView();
   configure.isUpSlideDismissDisabled = options.isUpSlideDismissDisabled();
   
-  configure.loadStyle = GKPhotoBrowserLoadStyleDeterminateSector;
-  configure.originLoadStyle = GKPhotoBrowserLoadStyleDeterminateSector;
+//  configure.loadStyle = GKPhotoBrowserLoadStyleDeterminateSector;
+//  configure.originLoadStyle = GKPhotoBrowserLoadStyleDeterminateSector;
   configure.failStyle = GKPhotoBrowserFailStyleOnlyImage;
   
   configure.videoLoadStyle = GKPhotoBrowserLoadStyleDeterminateSector;
