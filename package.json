@@ -1,6 +1,6 @@
 {
   "name": "rn-photo-viewer2",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "rn-photo-viewer",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
