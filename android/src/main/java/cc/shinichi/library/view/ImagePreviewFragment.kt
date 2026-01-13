@@ -319,9 +319,17 @@ class ImagePreviewFragment : Fragment() {
         if (cacheFile != null && cacheFile.exists()) {
             SLog.d(TAG, "initImageType: original exist, originPathUrl = $originPathUrl")
             loadLocalImage(originPathUrl.toString(), cacheFile)
-        } else {
-            SLog.d(TAG, "initImageType: original not exist, finalLoadUrl = $finalLoadUrl")
-            loadImage(finalLoadUrl.toString(), originPathUrl.toString())
+        }  else {
+            if (finalLoadUrl != null && finalLoadUrl.startsWith("file://")) {
+                SLog.d(TAG, "initImageType: load local image, finalLoadUrl = $finalLoadUrl")
+                loadLocalImage(
+                    originPathUrl.toString(),
+                    File(finalLoadUrl.replace("file://",""))
+                )
+            } else {
+                SLog.d(TAG, "initImageType: original not exist, finalLoadUrl = $finalLoadUrl")
+                loadImage(finalLoadUrl.toString(), originPathUrl.toString())
+            }
         }
     }
 
